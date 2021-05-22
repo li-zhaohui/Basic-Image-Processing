@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>form_video_input</class>
+ <widget class="QWidget" name="form_video_input">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Video Input</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(75, 75, 75);
+}
+QComboBox{
+background-color:rgb(50,50,50);
+color:rgb(200,200,200)
+}
+QTreeView{
+background-color:rgb(50,50,50);
+border:1px solid rgb(25,25,25);
+color:rgb(200,200,200)
+}
+QListView{
+background-color:rgb(50,50,50);
+border:1px solid rgb(25,25,25);
+color:rgb(200,200,200)
+}
+QLineEdit{
+color:rgb(200,200,200);
+border:1px solid rgb(120,120,120);
+background:rgb(50,50,50);
+}
+QPushButton {
+  padding: 0px 8px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(86,86,86);
+  background-color: rgb(14,215,185);
+  border: none;
+  border-radius: 5px;
+}
+
+QPushButton:hover {background-color:  rgb(0,172,142);}
+
+QPushButton:hover:pressed {
+  background-color: rgb(30,152,122);
+}
+QScrollBar:vertical {
+	border:0px solid;
+    background: rgb(50,50,50);
+    width: 30px;
+}
+QScrollBar:horizontal {
+	border:0px solid;
+    background: rgb(50,50,50);
+    height: 30px;
+}
+QScrollBar::handle:vertical {
+    background: rgb(80,80,80);
+	width:10px;
+	margin:10px;
+	border-radius:5px;
+	min-height:30px;
+}
+QScrollBar::handle:horizontal {
+    background: rgb(80,80,80);
+	height:10px;
+	margin:10px;
+	border-radius:5px;
+	min-width:30px;
+}
+QScrollBar::add-page, QScrollBar::sub-page{
+background:none;
+}
+QScrollBar::add-page:vertical{
+width:0px;
+}
+QScrollBar::sub-page:vertical{
+width:0px;
+}
+QScrollBar::add-line:vertical {
+width: 0px;
+}
+QScrollBar::sub-line:vertical {
+width: 0px;
+}
+QScrollBar::add-page:horizontal{
+height:0px;
+}
+QScrollBar::sub-page:horizontal{
+height:0px;
+}
+QScrollBar::add-line:horizontal {
+height: 0px;
+}
+QScrollBar::sub-line:horizontal {
+height: 0px;
+}
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+    width:0px;
+ }
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical{
+	height:0px;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>97</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>44</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Select Video File</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="le_video_path">
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_browse">
+         <property name="text">
+          <string>Browse</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_next">
+         <property name="text">
+          <string>Next</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_back">
+         <property name="text">
+          <string>Back</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="2">
+    <spacer name="horizontalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>43</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>97</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
